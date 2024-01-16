@@ -42,16 +42,17 @@ Summary of Publicly Available Highlight Removal Method
 
 ### Learning
 
-| Name             | Year | Publication | Code                                                         |
-| ---------------- | ---- | ----------- | ------------------------------------------------------------ |
-| SLRR             | 2018 | ECCV        | [Pytorch](https://github.com/dingguanglei/SLRR-SparseAndLowRankReflectionModel) |
-| TASHR            | 2021 | PRCV        | [Pytorch](https://github.com/weizequan/TASHR)                |
-| SpecularityNet   | 2021 | TMM         | [Pytorch](https://github.com/jianweiguo/SpecularityNet-PSD)  |
-| JSHDR            | 2021 | CVPR        | [Pytorch](https://github.com/fu123456/SHIQ)                  |
-| Unet-Transformer | 2022 | CVM         | [Pytorch](https://github.com/hzfengfengxia/specularityRemoval) |
-| MG-CycleGAN      | 2022 | PRL         | [Pytorch](https://github.com/hootoon/MG-Cycle-GAN)           |
-| TSRNet           | 2023 | ICCV        | [Pytorch](https://github.com/fu123456/TSHRNet)               |
-|                  | 2024 | ICASSP      | [Pytorch](https://github.com/LittleFocus2201/ICASSP2024)     |
+| Name             | Year | Publication    | Code                                                         |
+| ---------------- | ---- | -------------- | ------------------------------------------------------------ |
+| SLRR             | 2018 | ECCV           | [Pytorch](https://github.com/dingguanglei/SLRR-SparseAndLowRankReflectionModel) |
+| TASHR            | 2021 | PRCV           | [Pytorch](https://github.com/weizequan/TASHR)                |
+| SpecularityNet   | 2021 | TMM            | [Pytorch](https://github.com/jianweiguo/SpecularityNet-PSD)  |
+| JSHDR            | 2021 | CVPR           | [Pytorch](https://github.com/fu123456/SHIQ)                  |
+| Unet-Transformer | 2022 | CVM            | [Pytorch](https://github.com/hzfengfengxia/specularityRemoval) |
+| MG-CycleGAN      | 2022 | PRL            | [Pytorch](https://github.com/hootoon/MG-Cycle-GAN)           |
+| TSRNet           | 2023 | ICCV           | [Pytorch](https://github.com/fu123456/TSHRNet)               |
+| SHMGAN           | 2023 | Neurocomputing | [Tensorflow](https://github.com/Atif-Anwer/SHMGAN)           |
+|                  | 2024 | ICASSP         | [Pytorch](https://github.com/LittleFocus2201/ICASSP2024)     |
 
 ## Metric
 
