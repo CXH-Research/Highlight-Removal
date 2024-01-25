@@ -48,6 +48,7 @@ Summary of Publicly Available Highlight Removal Method
 | TASHR            | 2021 | PRCV           | [Pytorch](https://github.com/weizequan/TASHR)                |
 | SpecularityNet   | 2021 | TMM            | [Pytorch](https://github.com/jianweiguo/SpecularityNet-PSD)  |
 | JSHDR            | 2021 | CVPR           | [Pytorch](https://github.com/fu123456/SHIQ)                  |
+| Liang et al.     | 2021 | Optics Express | [Pytorch](https://github.com/Deepyanyuan/FaceIntrinsicDecomposition) |
 | Unet-Transformer | 2022 | CVM            | [Pytorch](https://github.com/hzfengfengxia/specularityRemoval) |
 | MG-CycleGAN      | 2022 | PRL            | [Pytorch](https://github.com/hootoon/MG-Cycle-GAN)           |
 | TSRNet           | 2023 | ICCV           | [Pytorch](https://github.com/fu123456/TSHRNet)               |
