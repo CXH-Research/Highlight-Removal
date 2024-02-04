@@ -25,6 +25,7 @@ Summary of Publicly Available Highlight Removal Method
 
 | Name                                                         | Year | Publication                                           | Code                                                         |
 | ------------------------------------------------------------ | ---- | ----------------------------------------------------- | ------------------------------------------------------------ |
+| Highlight removal by illumination-constrained inpainting     | 2003 | ICCV                                                  | [MATLAB](https://github.com/Kanvases/Highlight-Removal-by-Illumination-Constrained-Inpainting) |
 | Tan et al.                                                   | 2005 | TPAMI                                                 | [MATLAB](https://github.com/vitorsr/SIHR)                    |
 | Yoon et al.                                                  | 2006 | ICIP                                                  | [MATLAB](https://github.com/vitorsr/SIHR)                    |
 | Shen et al.                                                  | 2008 | Pattern Recognition                                   | [MATLAB](https://github.com/vitorsr/SIHR)                    |
@@ -32,6 +33,7 @@ Summary of Publicly Available Highlight Removal Method
 | Yang et al.                                                  | 2010 | ECCV                                                  | [MATLAB](https://github.com/vitorsr/SIHR)                    |
 | Shen et al.                                                  | 2013 | Applied Optics                                        | [MATLAB](https://github.com/vitorsr/SIHR)                    |
 | Separating reflection components of textured surfaces using a single image | 2015 | TPAMI                                                 | [MATLAB](https://github.com/vitorsr/SIHR)                    |
+| HDR image generation from LDR image with highlight removal   | 2015 | ICMEW                                                 | [Python](https://github.com/EthanWooo/Huo15)                 |
 | Akashi et al.                                                | 2016 | CVIU                                                  | [MATLAB](https://github.com/vitorsr/SIHR)                    |
 | Nurutdinova et al.                                           | 2017 | VISAPP                                                | [C++](https://github.com/AlexandraPapadaki/Specularity-Shadow-and-Occlusion-Removal-for-Planar-Objects-in-Stereo-Case) |
 | Real-Time High-Quality Specular Highlight Removal Using Efficient Pixel Clustering | 2018 | SIBGRAPI                                              | [C++](https://github.com/MarcioCerqueira/RealTimeSpecularHighlightRemoval) |
