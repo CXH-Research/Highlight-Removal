@@ -77,7 +77,7 @@ def Saturate(X):
     Y = np.minimum(1, np.maximum(0, X))
     return Y
 
-folder = 'input'
+folder = 'SSHQ'
 
 def process(img_path):
     # Import image to workspace
@@ -146,7 +146,7 @@ def process(img_path):
 
         i_s = aux
         i_d = Saturate(i_input - i_s)
-        cv2.imwrite(os.path.join('result', img_path), i_d)
+    cv2.imwrite(os.path.join('result', img_path), i_d)
 
 if __name__ == '__main__':
     imgs = os.listdir(folder)
