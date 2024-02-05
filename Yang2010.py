@@ -1,7 +1,13 @@
+import warnings
+warnings.filterwarnings('ignore')
 import numpy as np
+import os
 from scipy.interpolate import interpn
 from scipy.ndimage import convolve
 from scipy.signal import gaussian
+from PIL import Image
+from p_tqdm import p_map
+
 
 def bilateralFilter(data, edge=None, edgeMin=None, edgeMax=None, sigmaSpatial=None, sigmaRange=None,
                     samplingSpatial=None, samplingRange=None):
@@ -136,7 +142,11 @@ def bilateralFilter(data, edge=None, edgeMin=None, edgeMax=None, sigmaSpatial=No
 
     return output
 
-def Yang2010(I):
+folder = 'PSD'
+
+def Yang2010(image_path):
+    I = Image.open(os.path.join(folder, image_path))
+    I = np.array(I) / 255
     """
     Yang2010 I_d = Yang2010(I)
     This method uses a fast bilateralFilter implementation.
@@ -183,14 +193,12 @@ def Yang2010(I):
     I_s[den == 0] = np.max(I_s[den != 0])
 
     I_d = np.minimum(1, np.maximum(0, I-I_s[:,:,None]))
-
+    
+    I_d = Image.fromarray((I_d * 255).astype(np.uint8))
+    I_d.save(os.path.join('result', image_path))
     return I_d
 
 
-from PIL import Image
-
-img = Image.open('test.png')
-img = np.array(img) / 255
-result = Yang2010(img)
-result = Image.fromarray((result * 255).astype(np.uint8))
-result.save('result.jpg')
+if __name__ == '__main__':
+    imgs = os.listdir(folder)
+    p_map(Yang2010, imgs, num_cpus=0.9)
