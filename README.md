@@ -32,7 +32,6 @@ Summary of Publicly Available Highlight Removal Method
 | Shen et al.                                                  | 2009 | Applied Optics                                        | [MATLAB](https://github.com/vitorsr/SIHR)                    |
 | Yang et al.                                                  | 2010 | ECCV                                                  | [MATLAB](https://github.com/vitorsr/SIHR)                    |
 | Shen et al.                                                  | 2013 | Applied Optics                                        | [MATLAB](https://github.com/vitorsr/SIHR)                    |
-| Separating reflection components of textured surfaces using a single image | 2015 | TPAMI                                                 | [MATLAB](https://github.com/vitorsr/SIHR)                    |
 | HDR image generation from LDR image with highlight removal   | 2015 | ICMEW                                                 | [Python](https://github.com/EthanWooo/Huo15)                 |
 | Akashi et al.                                                | 2016 | CVIU                                                  | [MATLAB](https://github.com/vitorsr/SIHR)                    |
 | Nurutdinova et al.                                           | 2017 | VISAPP                                                | [C++](https://github.com/AlexandraPapadaki/Specularity-Shadow-and-Occlusion-Removal-for-Planar-Objects-in-Stereo-Case) |
