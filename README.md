@@ -46,7 +46,7 @@ Summary of Publicly Available Highlight Removal Method
 | Name             | Year | Publication    | Code                                                         |
 | ---------------- | ---- | -------------- | ------------------------------------------------------------ |
 | SLRR             | 2018 | ECCV           | [Pytorch](https://github.com/dingguanglei/SLRR-SparseAndLowRankReflectionModel) |
-| TASHR            | 2021 | PRCV           | [Pytorch](https://github.com/weizequan/TASHR)                |
+| TASHR            | 2021 | PRCV           | [Tensorflow](https://github.com/weizequan/TASHR)             |
 | SpecularityNet   | 2021 | TMM            | [Pytorch](https://github.com/jianweiguo/SpecularityNet-PSD)  |
 | JSHDR            | 2021 | CVPR           | [Pytorch](https://github.com/fu123456/SHIQ)                  |
 | Liang et al.     | 2021 | Optics Express | [Pytorch](https://github.com/Deepyanyuan/FaceIntrinsicDecomposition) |
