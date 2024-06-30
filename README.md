@@ -33,6 +33,9 @@ Summary of Publicly Available Highlight Removal Method
 | Shen et al.                                                  | 2008 | Pattern Recognition                                   | [MATLAB](https://github.com/vitorsr/SIHR)                    |
 | Shen et al.                                                  | 2009 | Applied Optics                                        | [MATLAB](https://github.com/vitorsr/SIHR)                    |
 | Yang et al.                                                  | 2010 | ECCV                                                  | [MATLAB](https://github.com/vitorsr/SIHR)                    |
+| Automatic segmentation and inpainting of specular highlights for endoscopic imaging | 2010 | Journal on Image and Video Processing                 | [MATLAB](https://github.com/jiemojiemo/some_specular_detection_and_inpainting_methods_for_endoscope_image) |
+| Detection and correction of specular reflections for automatic surgical tool segmentation in thoracoscopic images | 2011 | Machine Vision and Applications                       | [MATLAB](https://github.com/jiemojiemo/some_specular_detection_and_inpainting_methods_for_endoscope_image) |
+| Automatic detection and inpainting of specular reflections for colposcopic images | 2011 | Open Computer Science                                 | [MATLAB](https://github.com/jiemojiemo/some_specular_detection_and_inpainting_methods_for_endoscope_image) |
 | Shen et al.                                                  | 2013 | Applied Optics                                        | [MATLAB](https://github.com/vitorsr/SIHR)                    |
 | HDR image generation from LDR image with highlight removal   | 2015 | ICMEW                                                 | [Python](https://github.com/EthanWooo/Huo15)                 |
 | Akashi et al.                                                | 2016 | CVIU                                                  | [MATLAB](https://github.com/vitorsr/SIHR)                    |
@@ -40,6 +43,8 @@ Summary of Publicly Available Highlight Removal Method
 | Real-Time High-Quality Specular Highlight Removal Using Efficient Pixel Clustering | 2018 | SIBGRAPI                                              | [C++](https://github.com/MarcioCerqueira/RealTimeSpecularHighlightRemoval) |
 | SHR                                                          | 2019 | CGF                                                   | [MATLAB](https://github.com/fu123456/Specular_highlight_removal_for_real_world_images) |
 | Yamamoto et al.                                              | 2019 | ITE Transactions on Media Technology and Applications | [MATLAB](https://github.com/vitorsr/SIHR)                    |
+| Specular Reflections Removal for Endoscopic Image Sequences With Adaptive-Rpca Decomposition | 2020 | TMI                                                   |                                                              |
+| Highlight removal for endoscopic images based on accelerated adaptive non-convex RPCA decomposition | 2023 | CMPB                                                  |                                                              |
 | Saha et al.                                                  | 2020 | IET Image Processing                                  | [MATLAB](https://github.com/7ZFG1/Combining-Highlight-Re-moval-and-Lowlight-Image-Enhancement-Technique-for-HDR-like-Image-Generation-) |
 | Polar_HR                                                     | 2021 | TIP                                                   | [MATLAB](https://github.com/wsj890411/Polar_HR)              |
 
