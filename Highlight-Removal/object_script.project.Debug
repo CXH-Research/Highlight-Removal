@@ -1,0 +1,13 @@
+debug/main.o
+debug/mainwindow.o
+debug/ADMM_NonConv.o
+debug/AdaRPCA.o
+debug/Common.o
+debug/FPCP.o
+debug/HighlightProcessing.o
+debug/LagQN.o
+debug/Matrix_Decomposition.o
+debug/MorphologyOperator.o
+debug/PCP.o
+debug/Performance.o
+debug/moc_mainwindow.o

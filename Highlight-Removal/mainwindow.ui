@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>558</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>基于非凸低秩分解的内镜影像高光去除</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="srcImgLabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>350</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>source Image</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="dstImgLabel">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>40</y>
+      <width>350</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>destination Image</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="detectionBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>360</y>
+      <width>351</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>高光检测方法选择</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MS自适应阈值分割</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>经验阈值分割</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MSV自适应阈值分割</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>360</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Run</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="RPCATypeBox">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>360</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>低秩矩阵分解算法选择</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FastPCP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>LagQN</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AdaRPCA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SPCP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Non-RPCA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Non-Batches RPCA</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QTextEdit" name="displayInfor">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>406</y>
+      <width>741</width>
+      <height>111</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string> 文件</string>
+    </property>
+    <addaction name="actionopen"/>
+    <addaction name="separator"/>
+    <addaction name="actionopenborderImg"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>保存</string>
+    </property>
+    <addaction name="actionsaveRecon"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>展示</string>
+    </property>
+    <addaction name="actionshowSrc"/>
+    <addaction name="separator"/>
+    <addaction name="actionshowRecon"/>
+    <addaction name="separator"/>
+    <addaction name="actionshowLowrank"/>
+    <addaction name="separator"/>
+    <addaction name="actionshowSparse"/>
+    <addaction name="separator"/>
+    <addaction name="actionshowHighlight"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionopen">
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionopenborderImg">
+   <property name="text">
+    <string>打开带边界图像</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionsaveRecon">
+   <property name="text">
+    <string>保存重建图像</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionshowSrc">
+   <property name="text">
+    <string>展示输入图像</string>
+   </property>
+  </action>
+  <action name="actionshowRecon">
+   <property name="text">
+    <string>展示重建图像</string>
+   </property>
+  </action>
+  <action name="actionshowLowrank">
+   <property name="text">
+    <string>展示低秩图像</string>
+   </property>
+  </action>
+  <action name="actionshowSparse">
+   <property name="text">
+    <string>展示稀疏图像</string>
+   </property>
+  </action>
+  <action name="actionshowHighlight">
+   <property name="text">
+    <string>展示高光图像</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
