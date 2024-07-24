@@ -21,6 +21,8 @@ Summary of Publicly Available Highlight Removal Method
 
 [EndoSRR](https://github.com/Tobyzai/EndoSRR)
 
+[Hyper Kvasir](https://github.com/RemaDaher/CycleSTTN/blob/main/dataset_prep/README.md)
+
 ## Method
 
 ### Traditional
