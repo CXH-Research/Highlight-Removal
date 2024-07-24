@@ -62,9 +62,12 @@ Summary of Publicly Available Highlight Removal Method
 | MG-CycleGAN      | 2022 | PRL                                                          | [Pytorch](https://github.com/hootoon/MG-Cycle-GAN)           |
 | TSRNet           | 2023 | ICCV                                                         | [Pytorch](https://github.com/fu123456/TSHRNet)               |
 | SHMGAN           | 2023 | Neurocomputing                                               | [Tensorflow](https://github.com/Atif-Anwer/SHMGAN)           |
+| CycleSTTN        | 2023 | MICCAI                                                       | [Pytorch](https://github.com/RemaDaher/CycleSTTN)            |
+| Endo-STTN        | 2023 | MIA                                                          | [Pytorch](https://github.com/endomapper/Endo-STTN)           |
 |                  | 2024 | ICASSP                                                       | [Pytorch](https://github.com/LittleFocus2201/ICASSP2024)     |
 | EndoSRR          | 2024 | International Journal of Computer Assisted Radiology and Surgery | [Pytorch](https://github.com/Tobyzai/EndoSRR)                |
 | Film Removal     | 2024 | CVPR                                                         | [Pytorch](https://github.com/jqtangust/filmremoval)          |
+| DHAN-SHR         | 2024 | MM                                                           | [Pytorch](https://github.com/CXH-Research/DHAN-SHR)          |
 
 ## Metric
 
