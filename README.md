@@ -46,9 +46,9 @@ Summary of Publicly Available Highlight Removal Method
 | SHR                                                          | 2019 | CGF                                                   | [MATLAB](https://github.com/fu123456/Specular_highlight_removal_for_real_world_images) |
 | Yamamoto et al.                                              | 2019 | ITE Transactions on Media Technology and Applications | [MATLAB](https://github.com/vitorsr/SIHR)                    |
 | Specular Reflections Removal for Endoscopic Image Sequences With Adaptive-Rpca Decomposition | 2020 | TMI                                                   | [C++](https://github.com/CXH-Research/Highlight-Removal/tree/main/Highlight-Removal) |
-| Highlight removal for endoscopic images based on accelerated adaptive non-convex RPCA decomposition | 2023 | CMPB                                                  | [C++](https://github.com/CXH-Research/Highlight-Removal/tree/main/Highlight-Removal) |
 | Saha et al.                                                  | 2020 | IET Image Processing                                  | [MATLAB](https://github.com/7ZFG1/Combining-Highlight-Re-moval-and-Lowlight-Image-Enhancement-Technique-for-HDR-like-Image-Generation-) |
 | Polar_HR                                                     | 2021 | TIP                                                   | [MATLAB](https://github.com/wsj890411/Polar_HR)              |
+| Highlight removal for endoscopic images based on accelerated adaptive non-convex RPCA decomposition | 2023 | CMPB                                                  | [C++](https://github.com/CXH-Research/Highlight-Removal/tree/main/Highlight-Removal) |
 
 ### Learning
 
