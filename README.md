@@ -69,8 +69,10 @@ Summary of Publicly Available Highlight Removal Method
 |                  | 2024 | ICASSP                                                       | [Pytorch](https://github.com/LittleFocus2201/ICASSP2024)     |
 | EndoSRR          | 2024 | International Journal of Computer Assisted Radiology and Surgery | [Pytorch](https://github.com/Tobyzai/EndoSRR)                |
 | Film Removal     | 2024 | CVPR                                                         | [Pytorch](https://github.com/jqtangust/filmremoval)          |
+| HighlightRemover | 2024 | MM                                                           | [Pytorch](https://github.com/zz0223/HRNet)                   |
 | DHAN-SHR         | 2024 | MM                                                           | [Pytorch](https://github.com/CXH-Research/DHAN-SHR)          |
 | ORHLR-Net        | 2024 | TVC                                                          | [Pytorch](https://github.com/hzq2333/ORHLR-Net)              |
+| FHR-Net          | 2024 | TCSVT                                                        | [Pytorch](https://github.com/hongsheng-Z/FHR-Net)            |
 
 ## Metric
 
