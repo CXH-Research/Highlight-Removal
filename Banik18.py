@@ -126,7 +126,7 @@ def getHDR(img_path):
 result_dir = 'result'
 
 if __name__ == '__main__':
-    folder = './data'
+    folder = './all/SSHR'
     os.makedirs(result_dir, exist_ok=True)
-    imgs = os.listdir(folder)
+    imgs = [os.path.join(folder, img) for img in os.listdir(folder)]
     p_map(getHDR, imgs, num_cpus=0.9)
