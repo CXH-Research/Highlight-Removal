@@ -78,7 +78,7 @@ def getHF(MSFimg_3D, img_3D, I_highlightDetection, I_diffuseDetection):
     return HFimg_3D
 
 
-def getHDR(img_path, result_dir):
+def getHDR(img_path):
     img_3D = np.array(Image.open(img_path))
     I_highlightDetection, I_diffuseDetection, MSFimg = highlightDistinguish(
         img_3D)
@@ -123,9 +123,10 @@ def getHDR(img_path, result_dir):
     im.save(os.path.join(result_dir, os.path.basename(img_path)))
 
 
+result_dir = 'result'
+
 if __name__ == '__main__':
     folder = './data'
-    result_dir = 'result'
     os.makedirs(result_dir, exist_ok=True)
     imgs = os.listdir(folder)
-    p_map(getHDR, imgs, result_dir, num_cpus=0.9)
+    p_map(getHDR, imgs, num_cpus=0.9)

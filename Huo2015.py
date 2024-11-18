@@ -6,8 +6,8 @@ from p_tqdm import p_map
 def getGray(img):
     return img[:,:,0]*0.33+img[:,:,1]*0.33+img[:,:,2]*0.33
 
-def highlightDistinguish(img_path, result_dir):
-    img = np.array(Image.open(os.path.join(folder, img_path)))
+def highlightDistinguish(img_path):
+    img = np.array(Image.open(img_path))
     N = img.shape[0] * img.shape[1]
     SF = img.copy()
     MSF = img.copy()
@@ -34,7 +34,7 @@ def highlightDistinguish(img_path, result_dir):
             else:
                 highlightArea[x,y,:]=[0,0,0]
     im = Image.fromarray(plainArea)
-    im.save(os.path.join(result_dir, img_path))
+    im.save(os.path.join(result_dir, os.path.basename(img_path)))
     return highlightArea, plainArea, MSF
 
 def getHDR(img):
@@ -53,9 +53,10 @@ def getHDR(img):
     
     return average_luminance_value
 
+
+result_dir = 'result'
 if __name__ == '__main__':
-    folder = './all/RD'
-    result_dir = 'result'
+    folder = './all/RD/'
     os.makedirs(result_dir, exist_ok=True)
-    imgs = os.listdir(folder)
-    p_map(highlightDistinguish, imgs, result_dir, num_cpus=0.9)
+    imgs = [os.path.join(folder, img) for img in os.listdir(folder)]
+    p_map(highlightDistinguish, imgs, num_cpus=0.9)
