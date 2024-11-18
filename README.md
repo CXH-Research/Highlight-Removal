@@ -43,6 +43,7 @@ Summary of Publicly Available Highlight Removal Method
 | Akashi et al.                                                | 2016 | CVIU                                                  | [MATLAB](https://github.com/vitorsr/SIHR)                    |
 | Nurutdinova et al.                                           | 2017 | VISAPP                                                | [C++](https://github.com/AlexandraPapadaki/Specularity-Shadow-and-Occlusion-Removal-for-Planar-Objects-in-Stereo-Case) |
 | Real-Time High-Quality Specular Highlight Removal Using Efficient Pixel Clustering | 2018 | SIBGRAPI                                              | [C++](https://github.com/MarcioCerqueira/RealTimeSpecularHighlightRemoval) |
+| HDR Image from Single LDR Image after Removing Highlight     | 2018 | ICCE                                                  | [Python](https://github.com/EthanWooo/Banik181)              |
 | SHR                                                          | 2019 | CGF                                                   | [MATLAB](https://github.com/fu123456/Specular_highlight_removal_for_real_world_images) |
 | Yamamoto et al.                                              | 2019 | ITE Transactions on Media Technology and Applications | [MATLAB](https://github.com/vitorsr/SIHR)                    |
 | Specular Reflections Removal for Endoscopic Image Sequences With Adaptive-Rpca Decomposition | 2020 | TMI                                                   | [C++](https://github.com/CXH-Research/Highlight-Removal/tree/main/Highlight-Removal) |
