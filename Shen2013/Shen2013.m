@@ -8,7 +8,7 @@ result_dir = 'PSD';
 % Preparations for saving results.
 if ~exist(result_dir, 'dir'), mkdir(result_dir); end
 
-parfor i_img = 1:length(listing)
+for i_img = 1:length(listing)
     % Input = imread(fullfile(Image_dir,listing(i_img).name));
     sfi = fix(im2double(imread(fullfile(Image_dir,listing(i_img).name))));
     imwrite(sfi, fullfile(result_dir,listing(i_img).name));
@@ -87,9 +87,15 @@ for k = 1:num_clust
     if num == 0
         continue
     end
-
-    tmp = sort(ratio(1:num));
-    ratio_est = tmp(round(num*th_percent)+1);
+    
+    % Add safety check for num
+    if num < 2  % If there's only 1 element or none
+        ratio_est = ratio(1);  % Use the single value if it exists
+    else
+        tmp = sort(ratio(1:num));
+        idx = min(round(num*th_percent)+1, num);  % Ensure index doesn't exceed array size
+        ratio_est = tmp(idx);
+    end
 
     for i = 1:N
         if (Iclust(i) == k)
